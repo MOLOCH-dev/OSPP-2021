@@ -17,8 +17,16 @@ class MinimalSubscriber(Node):
             'local_costmap/published_footprint',
             self.listener_callback,
             10)
-        self.subscription2 = self.create_subscription(Twist, 'cmd_vel', self.listener_callback2, 10)
-        self.subscription3 = self.create_subscription(Pose2D, 'odom', self.listener_callback3, 10)
+        self.subscription2 = self.create_subscription(
+        	Twist,
+        	'cmd_vel',
+        	 self.listener_callback2,
+        	  10)
+        self.subscription3 = self.create_subscription(
+        	Pose2D,
+        	'odom',
+        	self.listener_callback3,
+        	 10)
         self.subscription  # prevent unused variable warning
         self.subscription2
         self.subscription3
@@ -29,7 +37,7 @@ class MinimalSubscriber(Node):
 
     def listener_callback(self, msg):
         #self.get_logger().info('I heard: "%s"' % str(len(msg.polygon.points))) #points[1].x
-        self.footprint = msg.polygon.points
+        self.footprint = msg.polygon.points # 16x3 array of Point32
         
         
         #print(self.footprint)
@@ -55,9 +63,9 @@ class MinimalSubscriber(Node):
         self.vely = msg.linear.y
         self.velz = msg.angular.z
         new_orien = self.orien + (self.velz*self.time)
-        for coord in footprint:
-	        coord[0] = coord[0] + self.velz*(self.velx*math.cos(new_orien))
-	        coord[1] = coord[1] + self.velz*(self.velx*math.cos(new_orien))
+        for coord in self.footprint:
+	        coord.x = coord.x + self.velz*(self.velx*math.cos(new_orien))
+	        coord.y = coord.y + self.velz*(self.velx*math.cos(new_orien))
         
         #print(self.velx,self.vely,self,velz)
         print(self.footprint)
