@@ -12,40 +12,38 @@
 #include <tf2/time.h>
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
-#include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/transform_stamped.h>
+#include <geometry_msgs/msg/twist.hpp>
 /* We do not recommend this style anymore, because composition of multiple
  * nodes in the same executable is not possible. Please see one of the subclass
  * examples for the "new" recommended styles. This example is only included
  * for completeness because it is similar to "classic" standalone ROS nodes. */
-
-class VelSubscriber : public rclcpp::Node
+ using std::placeholders::_1;
+class VellSubscriber : public rclcpp::Node
 {
   public:
-    MinimalSubscriber()
-    : Node("velsubscriber")
+    VelSubscriber()
+    : Node("vel_sub")
     {
-      subscription_ = this->create_subscription<geometry_msgs::msg::Twist>(
-      "cmd_vel", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+    	rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscription_;
+      	subscription_ = this->create_subscription<geometry_msgs::msg::Twist>(
+      "/cmd_vel", 10, std::bind(&VelSubscriber::topic_callback, this, _1));
     }
-    
 
   private:
     void topic_callback(const geometry_msgs::msg::Twist::SharedPtr msg) const
     {
-      RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg.c_str());
+      RCLCPP_INFO(this->get_logger(),msg->linear.c_str());
     }
-    rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscription_;
+    //rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscription_;
 };
-
-
 
 int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
-  auto node = rclcpp::Node::make_shared("tf_pub");
-  auto publisher = node->create_publisher<geometry_msgs::msg::PoseStamped>("tf_pub", 10);
-  float time = 0.5;
+  auto node = rclcpp::Node::make_shared("vel_sub");
+  auto subscriber = node->create_subscription<geometry_msgs::msg::Twist>("cmd_vel", 10);
+  
   
 
   //printf("TimePoint %d",tp);
@@ -72,12 +70,13 @@ int main(int argc, char * argv[])
         geometry_msgs::msg::TransformStamped transformStamped = buffer->lookupTransform("odom", "base_footprint", builtin_interfaces::msg::Time());
         message.pose.position.x = transformStamped.transform.translation.x;
         message.pose.position.y = transformStamped.transform.translation.y;
-        //RCLCPP_INFO(node->get_logger(), "Publishing: '%s'", str(message.pose));
-        std::cout<< message.pose.position.x <<std::endl;
-        publisher->publish(message);
+        RCLCPP_INFO(node->get_logger(), "Twist: '%s'", (message.linear.x).to_str());
+        std::cout<< message.pose.position.x << "" << message.pose.position.y << std::endl;
+        ////publisher->publish(message);
     }
     catch (tf2::TransformException & ex) {
-          RCLCPP_ERROR(node->get_logger(), "StaticLayer: %s", ex.what());
+          ////RCLCPP_ERROR(node->get_logger(), "StaticLayer: %s", ex.what());
+          std::cout << "exception" << std::endl;
     }
 
 
