@@ -4,6 +4,7 @@
 #include "std_msgs/msg/string.hpp"
 #include "nav2_util/robot_utils.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
+#include "geometry_msgs/msg/polygon_stamped.hpp"
 #include "tf2_ros/buffer.h"
 #include "tf2_geometry_msgs/tf2_geometry_msgs.h"
 #include "nav2_util/geometry_utils.hpp"
@@ -26,8 +27,13 @@ class MinimalSubscriber : public rclcpp::Node
     {
       subscription_ = this->create_subscription<geometry_msgs::msg::Twist>(
       "cmd_vel", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
-      
-
+      //publisher_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("tf_pose", 10)
+      subscription_f_ = this->create_subscription<geometry_msgs::msg::PolygonStamped>(
+      "local_costmap/published_footprint", 10, std::bind(&MinimalSubscriber::footprint_callback, this, _1));
+			tf2::Transform transform_;
+  		transform_.setIdentity();
+  		geometry_msgs::msg::PoseStamped message;
+  		rclcpp::WallRate loop_rate(500);
       
       
   		
@@ -51,21 +57,30 @@ class MinimalSubscriber : public rclcpp::Node
   	return out_pose;
    
 }
-
+		geometry_msgs::msg::PoseStamped out_pose;
+	
+geometry_msgs::msg::PoseStamped setOutput(geometry_msgs::msg::PoseStamped & in_pose) const
+  	{
+  		
+  		in_pose = out_pose;
+  		return in_pose;
+  	}
 
   
   
   private:
-  		tf2::Transform transform_;
-  		transform_.setIdentity();
-  		geometry_msgs::msg::PoseStamped message;
-  		rclcpp::WallRate loop_rate(500);
+  	
   		std::unique_ptr<tf2_ros::Buffer> buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
   		std::shared_ptr<tf2_ros::TransformListener> transform_listener_ = std::make_shared<tf2_ros::TransformListener>(*buffer);
+  		
+  	
+  		//const geometry_msgs::msg::PoseStamped out_pose;
   		//geometry_msgs::msg::PoseStamped & out_pose;
-  		
-  		
-  		
+  	void footprint_callback(const geometry_msgs::msg::PolygonStamped::SharedPtr footprint) const
+  	{
+  		std::cout << footprint << std::endl;
+  	}
+
   		
   	
   
@@ -76,6 +91,8 @@ class MinimalSubscriber : public rclcpp::Node
   		geometry_msgs::msg::Twist speed_var;
   		double projection_time = 0.1;
   		geometry_msgs::msg::PoseStamped out_pose;
+  		geometry_msgs::msg::PoseStamped in_pose;
+  		out_pose = setOutput(in_pose);
       speed_var.linear.x = speed->linear.x;
       speed_var.linear.y = speed->linear.y;
       speed_var.linear.z = speed->linear.z;
@@ -92,6 +109,7 @@ class MinimalSubscriber : public rclcpp::Node
     
     
     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscription_;
+    rclcpp::Subscription<geometry_msgs::msg::PolygonStamped>::SharedPtr subscription_f_;
 };
 
 int main(int argc, char * argv[])
