@@ -29,13 +29,14 @@ class MinimalSubscriber : public rclcpp::Node
       
 
       
-      tf2::Transform transform_;
-  		transform_.setIdentity();
-  		geometry_msgs::msg::PoseStamped message;
-  		rclcpp::WallRate loop_rate(500);
+      
   		
   		
    }
+   
+   
+   
+   
    
   geometry_msgs::msg::PoseStamped transformPose(geometry_msgs::msg::TransformStamped & in_pose, double projection_time,  geometry_msgs::msg::Twist & speed) const //made this const to get rid of [-fpermissive] flag
 
@@ -55,6 +56,10 @@ class MinimalSubscriber : public rclcpp::Node
   
   
   private:
+  		tf2::Transform transform_;
+  		transform_.setIdentity();
+  		geometry_msgs::msg::PoseStamped message;
+  		rclcpp::WallRate loop_rate(500);
   		std::unique_ptr<tf2_ros::Buffer> buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
   		std::shared_ptr<tf2_ros::TransformListener> transform_listener_ = std::make_shared<tf2_ros::TransformListener>(*buffer);
   		//geometry_msgs::msg::PoseStamped & out_pose;
