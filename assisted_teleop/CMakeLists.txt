@@ -25,25 +25,15 @@ find_package(nav2_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(nav2_util REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
 
-add_executable(talker src/publisher_member_function.cpp)
-ament_target_dependencies(talker rclcpp std_msgs)
-add_executable(listener src/subscriber_member_function.cpp)
-ament_target_dependencies(listener rclcpp std_msgs geometry_msgs)
+
 add_executable(assisted_teleop_node src/assisted_teleop.cpp)
 ament_target_dependencies(assisted_teleop_node rclcpp std_msgs geometry_msgs tf2 tf2_ros)
-add_executable(footprint_sub_node src/footprint_sub.cpp)
-ament_target_dependencies(footprint_sub_node rclcpp std_msgs geometry_msgs tf2 tf2_ros)
+
 install(TARGETS
-  talker
-  listener
-  footprint_sub_node
   assisted_teleop_node
   DESTINATION lib/${PROJECT_NAME})
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Pose.msg"
- )
+
 
 ament_package()

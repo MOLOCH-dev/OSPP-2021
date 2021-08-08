@@ -3,7 +3,7 @@
 <package format="3">
   <name>assisted_teleop</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Footprint projector node for assisted Teleop</description>
   <maintainer email="sabnisanushree@gmail.com">anushreesabnis</maintainer>
   <license>TODO: License declaration</license>
 
@@ -23,7 +23,6 @@
   <exec_depend>rclcpp_action</exec_depend>
   <exec_depend>test_msgs</exec_depend>
   <exec_depend>rclcpp_lifecycle</exec_depend>
-  <member_of_group>rosidl_interface_packages</member_of_group>
 
   <export>
     <build_type>ament_cmake</build_type>
