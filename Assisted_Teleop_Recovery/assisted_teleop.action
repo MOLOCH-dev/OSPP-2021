@@ -1,9 +1,0 @@
-#goal definition
-geometry_msgs/Point target
-float32 speed
-float32 target_yaw
----
-#result definition
-builtin_interfaces/Duration total_elapsed_time
----
-float32 distance_traveled

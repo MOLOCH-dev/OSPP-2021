@@ -1,0 +1,28 @@
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 2.0.4 (/opt/ros/foxy/share/geometry_msgs/cmake)
+-- Found nav_msgs: 2.0.4 (/opt/ros/foxy/share/nav_msgs/cmake)
+-- Found nav2_common: 0.4.7 (/home/anushreesabnis/nav2_ws/install/nav2_common/share/nav2_common/cmake)
+-- Found nav2_msgs: 0.4.7 (/home/anushreesabnis/nav2_ws/install/nav2_msgs/share/nav2_msgs/cmake)
+-- Found tf2_py: 0.13.10 (/opt/ros/foxy/share/tf2_py/cmake)
+-- Found tf2: 0.13.10 (/opt/ros/foxy/share/tf2/cmake)
+-- Found tf2_ros: 0.13.10 (/opt/ros/foxy/share/tf2_ros/cmake)
+-- Found tf2_sensor_msgs: 0.13.10 (/opt/ros/foxy/share/tf2_sensor_msgs/cmake)
+-- Found tf2_geometry_msgs: 0.13.10 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+-- Found tf2_eigen: 0.13.10 (/opt/ros/foxy/share/tf2_eigen/cmake)
+-- Found tf2_tools: 0.13.10 (/opt/ros/foxy/share/tf2_tools/cmake)
+-- Found nav2_util: 0.4.7 (/home/anushreesabnis/nav2_ws/install/nav2_util/share/nav2_util/cmake)
+-- Found nav2_costmap_2d: 0.4.7 (/home/anushreesabnis/nav2_ws/install/nav2_costmap_2d/share/nav2_costmap_2d/cmake)
+-- Found tf2_kdl: 0.13.10 (/home/anushreesabnis/ros2_foxy/install/tf2_kdl/share/tf2_kdl/cmake)
+-- Found nav_2d_utils: 0.4.7 (/home/anushreesabnis/nav2_ws/install/nav_2d_utils/share/nav_2d_utils/cmake)
+-- Setting build type to Release as none was specified.
+-- Configuring incomplete, errors occurred!
+See also "/home/anushreesabnis/OSPP-2021/ospp-ws/build/assisted_teleop/CMakeFiles/CMakeOutput.log".
+See also "/home/anushreesabnis/OSPP-2021/ospp-ws/build/assisted_teleop/CMakeFiles/CMakeError.log".

@@ -1,0 +1,15 @@
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:[m[K In function ‘[01m[Kvoid assisted_teleop::projectFootprint(geometry_msgs::msg::PolygonStamped_<std::allocator<void> >::SharedPtr, geometry_msgs::msg::PolygonStamped_<std::allocator<void> >::SharedPtr, double, double, double)[m[K’:
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:36:9:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kyaw_[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+   36 |  [01;31m[Kdouble yaw_[m[K, double speed_, double projection_time )
+      |  [01;31m[K~~~~~~~^~~~[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:36:22:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kspeed_[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+   36 |  double yaw_, [01;31m[Kdouble speed_[m[K, double projection_time )
+      |               [01;31m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:36:37:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kprojection_time[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+   36 | double speed_, [01;31m[Kdouble projection_time[m[K )
+      |                [01;31m[K~~~~~~~^~~~~~~~~~~~~~~[m[K
+
+cc1plus: all warnings being treated as errors
+make[2]: *** [CMakeFiles/assisted_teleop_core.dir/build.make:63: CMakeFiles/assisted_teleop_core.dir/src/assisted_teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/assisted_teleop_core.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

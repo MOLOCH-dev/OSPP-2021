@@ -1,0 +1,6 @@
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:17:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_[m[K’ is not a type
+   17 |     double projection_time, [01;31m[Kyaw_[m[K)
+      |                             [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/assisted_teleop_core.dir/build.make:63: CMakeFiles/assisted_teleop_core.dir/src/assisted_teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/assisted_teleop_core.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,32 @@
+[35m[1mScanning dependencies of target assisted_teleop_core[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/assisted_teleop_core.dir/src/assisted_teleop.cpp.o[0m
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:7:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kassisted_teleop::tf_buffer[m[K’ declared as reference but not initialized
+    7 | tf2_ros::Buffer & [01;31m[Ktf_buffer[m[K;
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:10:14:[m[K [01;31m[Kerror: [m[Kuninitialized const ‘[01m[Kassisted_teleop::transform_timeout[m[K’ [[01;31m[K-fpermissive[m[K]
+   10 | const double [01;31m[Ktransform_timeout[m[K;
+      |              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:[m[K In function ‘[01m[Kdouble assisted_teleop::projectPose(geometry_msgs::msg::PoseStamped&, geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr, double, double)[m[K’:
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:19:6:[m[K [01;31m[Kerror: [m[K‘[01m[KgetCurrentPose[m[K’ was not declared in this scope; did you mean ‘[01m[Knav2_util::getCurrentPose[m[K’?
+   19 |  if ([01;31m[KgetCurrentPose[m[K(global_pose_, tf_buffer, global_frame, robot_frame, transform_timeout ))
+      |      [01;31m[K^~~~~~~~~~~~~~[m[K
+      |      [32m[Knav2_util::getCurrentPose[m[K
+In file included from [01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/include/assisted_teleop/assisted_teleop.hpp:10[m[K,
+                 from [01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:1[m[K:
+[01m[K/home/anushreesabnis/nav2_ws/install/nav2_util/include/nav2_util/robot_utils.hpp:34:6:[m[K [01;36m[Knote: [m[K‘[01m[Knav2_util::getCurrentPose[m[K’ declared here
+   34 | bool [01;36m[KgetCurrentPose[m[K(
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:21:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kprojection_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kprojection_time_[m[K’?
+   21 | .pose.orientation.z + [01;31m[Kprojection_time[m[K *
+      |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                       [32m[Kprojection_time_[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:17:12:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kprojection_time_[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+   17 |     [01;31m[Kdouble projection_time_[m[K, double yaw_)
+      |     [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:32:1:[m[K [01;31m[Kerror: [m[Kcontrol reaches end of non-void function [[01;31m[K-Werror=return-type[m[K]
+   32 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+cc1plus: all warnings being treated as errors
+make[2]: *** [CMakeFiles/assisted_teleop_core.dir/build.make:63: CMakeFiles/assisted_teleop_core.dir/src/assisted_teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/assisted_teleop_core.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,13 @@
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/main.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/main.cpp:96:41:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kgeometry_msgs::msg::PoseStamped&[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >&[m[K’} from expression of type ‘[01m[Kstd::unique_ptr<tf2_ros::Buffer>[m[K’
+   96 | _teleop::projectPose([01;31m[Kbuffer[m[K, global_pose_,out_pose,speed,projection_time,yaw_ );
+      |                      [01;31m[K^~~~~~[m[K
+
+In file included from [01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/main.cpp:17[m[K:
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/include/assisted_teleop/assisted_teleop.hpp:27:36:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kdouble assisted_teleop::projectPose(geometry_msgs::msg::PoseStamped&, geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr, double, double)[m[K’
+   27 | [01;36m[Ktry_msgs::msg::PoseStamped & out_pose[m[K,
+      | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+
+make[2]: *** [CMakeFiles/assisted_teleop_node.dir/build.make:63: CMakeFiles/assisted_teleop_node.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/assisted_teleop_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

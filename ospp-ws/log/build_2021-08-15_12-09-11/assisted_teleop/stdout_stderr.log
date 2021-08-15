@@ -1,0 +1,11 @@
+[ 50%] Built target assisted_teleop_core
+[35m[1mScanning dependencies of target assisted_teleop_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/assisted_teleop_node.dir/src/main.cpp.o[0m
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/main.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::footprint_callback(geometry_msgs::msg::PolygonStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/main.cpp:73:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kspin_once[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[Kspin_some[m[K’?
+   73 |       rclcpp::[01;31m[Kspin_once[m[K();
+      |               [01;31m[K^~~~~~~~~[m[K
+      |               [32m[Kspin_some[m[K
+make[2]: *** [CMakeFiles/assisted_teleop_node.dir/build.make:63: CMakeFiles/assisted_teleop_node.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/assisted_teleop_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

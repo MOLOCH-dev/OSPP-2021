@@ -1,0 +1,14 @@
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:5:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass assisted_teleop::AssistedTeleop[m[K’
+    5 | class [01;31m[KAssistedTeleop[m[K{
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:1[m[K:
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/include/assisted_teleop/assisted_teleop.hpp:24:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass assisted_teleop::AssistedTeleop[m[K’
+   24 | class [01;36m[KAssistedTeleop[m[K{
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:12:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_[m[K’ was not declared in this scope
+   12 |  [01;31m[Kyaw_[m[K = 1.0;
+      |  [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/assisted_teleop_node.dir/build.make:63: CMakeFiles/assisted_teleop_node.dir/src/assisted_teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/assisted_teleop_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

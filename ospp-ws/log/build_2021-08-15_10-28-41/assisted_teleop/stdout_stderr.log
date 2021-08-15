@@ -1,0 +1,31 @@
+[35m[1mScanning dependencies of target assisted_teleop_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/assisted_teleop_node.dir/src/assisted_teleop.cpp.o[0m
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:[m[K In function ‘[01m[Kvoid assisted_teleop::projectPose(geometry_msgs::msg::TransformStamped&, geometry_msgs::msg::PoseStamped&, geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr, double, double)[m[K’:
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:17:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   17 |  out_pose
+      |          [01;31m[K^[m[K
+      |          [32m[K;[m[K
+   18 | [32m[K}[m[K
+      | [32m[K~[m[K         
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:17:2:[m[K [01;31m[Kerror: [m[Kstatement has no effect [[01;31m[K-Werror=unused-value[m[K]
+   17 |  [01;31m[Kout_pose[m[K
+      |  [01;31m[K^~~~~~~~[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:12:41:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kglobal_pose_[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+   12 | [01;31m[K::msg::TransformStamped & global_pose_[m[K,
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:14:48:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kspeed[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+   14 | [01;31m[Ksg::Twist::SharedPtr speed[m[K,
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:15:12:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kprojection_time_[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+   15 |     [01;31m[Kdouble projection_time_[m[K, double yaw_)
+      |     [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:15:37:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kyaw_[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+   15 | ection_time_, [01;31m[Kdouble yaw_[m[K)
+      |               [01;31m[K~~~~~~~^~~~[m[K
+
+cc1plus: all warnings being treated as errors
+make[2]: *** [CMakeFiles/assisted_teleop_node.dir/build.make:63: CMakeFiles/assisted_teleop_node.dir/src/assisted_teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/assisted_teleop_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

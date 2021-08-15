@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/anushreesabnis/OSPP-2021/ospp-ws/build/assisted_teleop/assisted_teleop_node" "TARGETS" "assisted_teleop_node" "DESTINATION" "lib/assisted_teleop")

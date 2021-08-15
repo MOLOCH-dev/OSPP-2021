@@ -1,0 +1,20 @@
+[ 50%] Built target assisted_teleop_core
+[35m[1mScanning dependencies of target assisted_teleop_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/assisted_teleop_node.dir/src/main.cpp.o[0m
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/main.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::footprint_callback(geometry_msgs::msg::PolygonStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/main.cpp:73:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin()[m[K’
+   73 |       rclcpp::spin([01;31m[K)[m[K;
+      |                    [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/main.cpp:8[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr)[m[K’
+   45 | [01;36m[Kspin[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::Node::SharedPtr)[m[K’
+   49 | [01;36m[Kspin[m[K(rclcpp::Node::SharedPtr node_ptr);
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/assisted_teleop_node.dir/build.make:63: CMakeFiles/assisted_teleop_node.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/assisted_teleop_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

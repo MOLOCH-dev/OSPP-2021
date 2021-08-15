@@ -1,0 +1,9 @@
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:7:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kassisted_teleop::tf_buffer[m[K’ declared as reference but not initialized
+    7 | tf2_ros::Buffer & [01;31m[Ktf_buffer[m[K;
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:13:1:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kdouble[m[K’
+   13 | [01;31m[Kdouble[m[K
+      | [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/assisted_teleop_core.dir/build.make:63: CMakeFiles/assisted_teleop_core.dir/src/assisted_teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/assisted_teleop_core.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target assisted_teleop_core[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/assisted_teleop_core.dir/src/assisted_teleop.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library libassisted_teleop_core.so[0m
+[ 50%] Built target assisted_teleop_core
+[35m[1mScanning dependencies of target assisted_teleop_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/assisted_teleop_node.dir/src/main.cpp.o[0m

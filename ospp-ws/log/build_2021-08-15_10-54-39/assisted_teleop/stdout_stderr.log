@@ -1,0 +1,33 @@
+[35m[1mScanning dependencies of target assisted_teleop_core[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/assisted_teleop_core.dir/src/assisted_teleop.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library libassisted_teleop_core.so[0m
+[ 50%] Built target assisted_teleop_core
+[35m[1mScanning dependencies of target assisted_teleop_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/assisted_teleop_node.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable assisted_teleop_node[0m
+[100%] Built target assisted_teleop_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/lib/libassisted_teleop_core.so
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/lib/assisted_teleop/assisted_teleop_node
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/include//assisted_teleop/assisted_teleop.hpp
+-- Symlinking: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/environment/library_path.sh
+-- Symlinking: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/environment/library_path.dsv
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/ament_index/resource_index/package_run_dependencies/assisted_teleop
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/ament_index/resource_index/parent_prefix_path/assisted_teleop
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/environment/path.sh
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/environment/path.dsv
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/local_setup.bash
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/local_setup.sh
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/local_setup.zsh
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/local_setup.dsv
+-- Symlinking: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/package.dsv
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/ament_index/resource_index/packages/assisted_teleop
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/cmake/assisted_teleopConfig.cmake
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/cmake/assisted_teleopConfig-version.cmake
+-- Up-to-date symlink: /home/anushreesabnis/OSPP-2021/ospp-ws/install/assisted_teleop/share/assisted_teleop/package.xml

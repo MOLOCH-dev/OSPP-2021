@@ -1,0 +1,11 @@
+[35m[1mScanning dependencies of target assisted_teleop_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/assisted_teleop_node.dir/src/assisted_teleop.cpp.o[0m
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:17:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   17 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:8:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+    8 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/assisted_teleop_node.dir/build.make:63: CMakeFiles/assisted_teleop_node.dir/src/assisted_teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/assisted_teleop_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

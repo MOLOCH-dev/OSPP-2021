@@ -1,0 +1,8 @@
+In file included from [01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/src/assisted_teleop.cpp:1[m[K:
+[01m[K/home/anushreesabnis/OSPP-2021/ospp-ws/assisted_teleop/include/assisted_teleop/assisted_teleop.hpp:40:77:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ at top level
+   40 | que<tf2_ros::Buffer>([01;31m[Kthis[m[K->get_clock());
+      |                      [01;31m[K^~~~[m[K
+
+make[2]: *** [CMakeFiles/assisted_teleop_node.dir/build.make:63: CMakeFiles/assisted_teleop_node.dir/src/assisted_teleop.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/assisted_teleop_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
