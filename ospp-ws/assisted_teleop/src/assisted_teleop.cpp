@@ -2,8 +2,6 @@
 
 #include "assisted_teleop/assisted_teleop.hpp"
 
-#include <string>
-
 namespace assisted_teleop
 {
 
@@ -19,8 +17,8 @@ projectPose(
   double projection_time, double yaw_)
 {
   if (nav2_util::getCurrentPose(
-      global_pose_, tf_buffer, const std::string global_frame = "map",
-      const std::string robot_frame = "base_link",
+      global_pose_, tf_buffer, "map",
+      "base_link",
       transform_timeout))
   {
     out_pose.pose.orientation.z = global_pose_.pose.orientation.z;

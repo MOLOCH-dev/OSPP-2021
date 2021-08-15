@@ -13,6 +13,7 @@
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "geometry_msgs/msg/polygon_stamped.hpp"
 #include "nav2_util/geometry_utils.hpp"
+#include "nav2_costmap_2d/footprint_collision_checker.hpp"
 #include <rclcpp/time_source.hpp> //NOLINT
 #include <tf2_ros/transform_listener.h> //NOLINT
 #include <tf2/utils.h> //NOLINT
